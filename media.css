@@ -69,16 +69,19 @@
       gap: 20px;
     }
     #container {
-      width: 90%;
+      width: 95%;
+      height: 95%;
       height: auto;
+      gap: 7px;
     }
 
     .box {
-      font-size: 20px;
+      font-size: 25px;
+      padding: 5px;
     }
 
     #words {
-      width: 90%;
+      width: 95%;
       height: auto;
       padding: 20px;
       font-size: 20px;
