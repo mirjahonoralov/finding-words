@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "League Spartan", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  background-color: rgb(136, 2, 74);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.title {
+  display: none;
+}
+
+#secondPage {
+  display: none;
+}
+
+#secondPageStyle {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+  padding: 0 2%;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 350px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: rgb(255, 77, 172);
+  margin-bottom: 30px;
+  border: none;
+  font-size: 35px;
+  color: #fff;
+  transition: 0.2s;
+}
+
+button:active {
+  transform: scale(1.08);
+}
+
+/* second page */
+#container {
+  padding: 10px;
+  width: 500px;
+  height: 500px;
+  color: #000;
+  background-color: #fff;
+  display: grid;
+  grid-template: repeat(8, 1fr) / repeat(8, 1fr);
+  gap: 10px;
+}
+
+.box {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+#words {
+  padding: 30px 50px;
+  /* width: 400px;
+  height: 350px; */
+  background-color: #fff;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: black;
+}
+
+.word {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: repeat(5, 1fr);
+  gap: 20px;
+  padding: 15px 0;
+}
+
+.word p {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected-letter {
+  background-color: blue;
+  color: #fff;
+}
+
+.selected-words-card {
+  background-color: rgb(48, 48, 255);
+  box-shadow: 0 0 10px #303030;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.bottom {
+  display: flex;
+  font-size: 50px;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.result {
+  display: none;
+}
+
+.finish-game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.finish-game h1 {
+  background-color: rgb(255, 77, 172);
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.amount {
+  font-size: 45px;
+}
+
+.winner {
+  display: none;
+}
+
+.winner h1 {
+  margin-bottom: 20px;
+}
