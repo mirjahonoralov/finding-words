@@ -119,7 +119,7 @@ const renderTimer = () => {
       sec = 59;
     }
     if (sec > 0) renderTimer();
-  }, 10);
+  }, 1000);
 };
 
 let counter = [];
