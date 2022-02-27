@@ -1,4 +1,5 @@
 const SECOND_PAGE = document.getElementById("secondPage");
+const TITLE = document.querySelector(".title");
 const RESULT = document.querySelector(".result");
 const BTNS = document.querySelector(".btns");
 const BTN1 = document.querySelector(".btn1");
@@ -97,6 +98,7 @@ function findWord(words) {
 
 const finishGame = (prop) => {
   SECOND_PAGE.style.display = "none";
+  TITLE.style.display = "none";
   if (prop === "timed") {
     RESULT.className = "finish-game";
     AMOUNT.innerHTML = counter.length;
@@ -117,7 +119,7 @@ const renderTimer = () => {
       sec = 59;
     }
     if (sec > 0) renderTimer();
-  }, 1000);
+  }, 10);
 };
 
 let counter = [];
